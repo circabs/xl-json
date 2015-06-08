@@ -1,0 +1,37 @@
+[
+    {
+        "roleA:party": "Sales",
+        "roleB:party": "Circa Business Solutions Limited",
+        "startDate": "2013-09-06"
+    },
+    {
+        "roleA:party": "Human Resources",
+        "roleB:party": "Circa Business Solutions Limited",
+        "startDate": "2012-06-21"
+    },
+    {
+        "roleA:party": "Finance",
+        "roleB:party": "Circa Business Solutions Limited",
+        "startDate": "2012-08-06"
+    },
+    {
+        "roleA:party": "Bletchley Store",
+        "roleB:party": "Tesco Stores Limited",
+        "startDate": "2009-05-01"
+    },
+    {
+        "roleA:party": "Hemel Store",
+        "roleB:party": "Tesco Stores Limited",
+        "startDate": "2008-04-06"
+    },
+    {
+        "roleA:party": "Distribution",
+        "roleB:party": "John Lewis Partnership",
+        "startDate": "2007-07-13"
+    },
+    {
+        "roleA:party": "Milton Keynes Store",
+        "roleB:party": "John Lewis Partnership",
+        "startDate": "2010-08-09"
+    }
+]

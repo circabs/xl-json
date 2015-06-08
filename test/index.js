@@ -76,7 +76,7 @@ describe('Convert', function () {
 
         var parser = new Converter({
             input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
-            output: Path.resolve(__dirname, '../output/relationship'),
+            output: Path.resolve(__dirname, '../test/output/relationship'),
             spacer: 2
 
         });
@@ -90,7 +90,7 @@ describe('Convert', function () {
 
         var parser = new Converter({
             input: '../test/excel/relationship.xlsx',
-            output: '../output/relationship',
+            output: '../test/output/relationship',
             spacer: 4
 
         });
@@ -106,7 +106,7 @@ describe('Convert', function () {
 
         var parser = new Converter({
             input: '../test/excel/relationship.xlsx',
-            output: '../output/relationship',
+            output: '../test/output/relationship',
             spacer: 4
 
         });

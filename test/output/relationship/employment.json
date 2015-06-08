@@ -1,0 +1,37 @@
+[
+    {
+        "roleA:party": "Wright::Ian",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2012-01-02",
+        "username": "wrighty",
+        "email:address": "ian.wright@circabs.com"
+    },
+    {
+        "roleA:party": "Adams::Tony",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2012-02-03",
+        "username": "bigTone",
+        "email:address": "tony.adams@circabs.com"
+    },
+    {
+        "roleA:party": "Dixon::Lee",
+        "roleB:party": "Circa Business Solutions Limited::Finance",
+        "startDate": "2012-04-05",
+        "username": "lee",
+        "email:address": "lee.dixon@circabs.com"
+    },
+    {
+        "roleA:party": "Bould::Steve",
+        "roleB:party": "Circa Business Solutions Limited::Finance",
+        "startDate": "2013-05-06",
+        "username": "steve",
+        "email:address": "finance@circabs.com"
+    },
+    {
+        "roleA:party": "Winterburn::Nigel",
+        "roleB:party": "Circa Business Solutions Limited::Finance",
+        "startDate": "2013-06-07",
+        "username": "sun",
+        "email:address": "finance@circabs.com"
+    }
+]

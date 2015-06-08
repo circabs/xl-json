@@ -1,0 +1,47 @@
+[
+    {
+        "roleA:party": "Sales",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-07-08"
+    },
+    {
+        "roleA:party": "Richardson::Christopher",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-08-09"
+    },
+    {
+        "roleA:party": "Riccardo::Daniel",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-09-10"
+    },
+    {
+        "roleA:party": "Brown::Christine",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-10-11"
+    },
+    {
+        "roleA:party": "Baker::Christian",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-11-12"
+    },
+    {
+        "roleA:party": "Christal::Billy",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2013-12-01"
+    },
+    {
+        "roleA:party": "Smith::Christopher",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2014-01-04"
+    },
+    {
+        "roleA:party": "Rodgers::Kenny",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2014-02-05"
+    },
+    {
+        "roleA:party": "Ricci::Susan",
+        "roleB:party": "Circa Business Solutions Limited::Sales",
+        "startDate": "2014-03-04"
+    }
+]
