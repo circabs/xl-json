@@ -1,0 +1,26 @@
+{
+  "name": "xl-json",
+  "version": "0.0.1",
+  "description": "excel-to-json converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -a code -v -L -t 90 -l"
+  },
+  "keywords": [
+    "excel-to-json",
+    "xls-to-json"
+  ],
+  "author": "simon-p-r",
+  "license": "BSD",
+  "dependencies": {
+    "hoek": "^2.14.0",
+    "j": "^0.4.3",
+    "joi": "^6.4.3",
+    "path-is-absolute": "^1.0.0"
+  },
+  "devDependencies": {
+    "code": "^1.4.0",
+    "lab": "^5.9.0",
+    "std-mocks": "^1.0.0"
+  }
+}
