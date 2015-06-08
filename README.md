@@ -2,7 +2,7 @@
 
 Converts a complete excel spreadsheet to json and writes file out, optionally it can pipe one worksheet json stream to a pipeline  
 
-[![Build Status](https://travis-ci.org/simon-p-r/xl-json.svg?branch=master)](https://travis-ci.org/simon-p-r/xl-json)
+[![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/simon-p-r/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
 ![devDependencies](http://img.shields.io/david/dev/simon-p-r/xl-json.svg)
 
