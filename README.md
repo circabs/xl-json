@@ -2,9 +2,9 @@
 
 Converts a complete excel spreadsheet to json and writes file out, optionally it can pipe one worksheet json stream to a pipeline  
 
-<!-- [![Build Status](https://travis-ci.org/simon-p-r/find-key.svg?branch=master)](https://travis-ci.org/simon-p-r/find-key)
-[![Current Version](https://img.shields.io/npm/v/find-key.svg)](https://www.npmjs.org/package/find-key)
-![devDependencies](http://img.shields.io/david/dev/simon-p-r/find-key.svg) -->
+[![Build Status](https://travis-ci.org/simon-p-r/xl-json.svg?branch=master)](https://travis-ci.org/simon-p-r/xl-json)
+[![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
+![devDependencies](http://img.shields.io/david/dev/simon-p-r/xl-json.svg)
 
 
 ### Install
@@ -70,7 +70,7 @@ var results = new Converter(options);
 
 results.cursor('customer').pipe(process.stdout);
 
-// Also exposes a stream which can be written of piped somewhere
+// Also exposes a stream which can be written or piped somewhere
 
 ```
 

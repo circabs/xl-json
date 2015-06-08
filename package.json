@@ -1,6 +1,6 @@
 {
   "name": "xl-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "excel-to-json converter",
   "main": "index.js",
   "scripts": {
