@@ -1,5 +1,7 @@
 ## Changelog
 
++ 1.0.1 - removed line form README
+
 + 1.0.0 - fixed broken, dev dependencies badge, improved tests and removed unused test excel files
 
 + 0.0.5 - fixed broken travis link

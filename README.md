@@ -33,9 +33,7 @@ var options = {
 
 var results = new Converter(options);
 
-// module will write files out when run to output directory
-
-// call writeFile to write out objects as json file
+// call writeFile to write out objects as json file for each worksheet in excel file
 
 results.writeFile();
 
