@@ -1,37 +1,44 @@
 [
     {
-        "roleA:party": "Sales",
-        "roleB:party": "Circa Business Solutions Limited",
-        "startDate": "2013-09-06"
+        "roleA": "Sales",
+        "roleB": "Acme Ltd",
+        "startDate": "2013-09-06",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Human Resources",
-        "roleB:party": "Circa Business Solutions Limited",
-        "startDate": "2012-06-21"
+        "roleA": "Human Resources",
+        "roleB": "Acme Ltd",
+        "startDate": "2012-06-21",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Finance",
-        "roleB:party": "Circa Business Solutions Limited",
-        "startDate": "2012-08-06"
+        "roleA": "Finance",
+        "roleB": "Acme Ltd",
+        "startDate": "2012-08-06",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Bletchley Store",
-        "roleB:party": "Tesco Stores Limited",
-        "startDate": "2009-05-01"
+        "roleA": "Bletchley Store",
+        "roleB": "Tesco Stores Limited",
+        "startDate": "2009-05-01",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Hemel Store",
-        "roleB:party": "Tesco Stores Limited",
-        "startDate": "2008-04-06"
+        "roleA": "Hemel Store",
+        "roleB": "Tesco Stores Limited",
+        "startDate": "2008-04-06",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Distribution",
-        "roleB:party": "John Lewis Partnership",
-        "startDate": "2007-07-13"
+        "roleA": "Distribution",
+        "roleB": "John Lewis Partnership",
+        "startDate": "2007-07-13",
+        "recType": "organisation"
     },
     {
-        "roleA:party": "Milton Keynes Store",
-        "roleB:party": "John Lewis Partnership",
-        "startDate": "2010-08-09"
+        "roleA": "Milton Keynes Store",
+        "roleB": "John Lewis Partnership",
+        "startDate": "2010-08-09",
+        "recType": "organisation"
     }
 ]

@@ -7,13 +7,18 @@ var Readable = require('stream').Readable;
 var Converter = require('../lib/index.js');
 var StdMocks = require('std-mocks');
 
-
 // Set-up lab
 var lab = exports.lab = Lab.script();
 var describe = lab.describe;
 var it = lab.it;
 var expect = Code.expect;
 
+var options = {
+
+    input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
+    output: Path.resolve(__dirname, '../test/output/relationship'),
+    spacer: 4
+};
 
 describe('Convert', function () {
 
@@ -74,13 +79,8 @@ describe('Convert', function () {
 
     it('should have settings defined', function (done) {
 
-        var parser = new Converter({
-            input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
-            output: Path.resolve(__dirname, '../test/output/relationship'),
-            spacer: 2
-
-        });
-
+        var parser = new Converter(options);
+        parser.writeFile();
         expect(parser.settings).to.be.an.object();
         done();
 
@@ -88,13 +88,9 @@ describe('Convert', function () {
 
     it('should have data object defined', function (done) {
 
-        var parser = new Converter({
-            input: '../test/excel/relationship.xlsx',
-            output: '../test/output/relationship',
-            spacer: 4
-
-        });
-
+        options.input = '../test/excel/relationship.xlsx';
+        options.output = '../test/output/relationship';
+        var parser = new Converter(options);
         expect(parser.data).to.be.an.object();
         expect(parser.settings).to.be.an.object();
         expect(parser.settings.spacer).to.equal(4);
@@ -104,15 +100,9 @@ describe('Convert', function () {
 
     it('should have expose a cursor stream', function (done) {
 
-        var parser = new Converter({
-            input: '../test/excel/relationship.xlsx',
-            output: '../test/output/relationship',
-            spacer: 4
-
-        });
-
+        var parser = new Converter(options);
         StdMocks.use();
-        parser.cursor('employment').pipe(process.stdout);
+        parser.cursor('organisation').pipe(process.stdout);
         StdMocks.restore();
         var test = StdMocks.flush();
         expect(test.stdout[0]).to.equal(test.stdout[1]);
