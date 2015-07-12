@@ -1,5 +1,7 @@
 ## Changelog
 
++ 1.1.3 - fixed broken test due to missing outout directory
+
 + 1.1.2 - modified .gitignore and added code coverage badge
 
 + 1.1.1 - added repo filed and ammended licence type both in package.json file
