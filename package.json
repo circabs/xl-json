@@ -1,6 +1,6 @@
 {
   "name": "xl-json",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "excel-to-json converter",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,12 @@
     "excel-to-json",
     "xls-to-json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:circabs/xl-json.git"
+  },
   "author": "simon-p-r",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "hoek": "2.x.x",
     "j": "0.x.x",

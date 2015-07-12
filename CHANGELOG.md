@@ -1,5 +1,7 @@
 ## Changelog
 
++ 1.1.1 - added repo filed and ammended licence type both in package.json file
+
 + 1.1.0 - changed cursor method to streamSheet and added streamBook method to fix issue #2, added .estlinrc and improved type checking of streamSheet function
 
 + 1.0.1 - removed line form README
