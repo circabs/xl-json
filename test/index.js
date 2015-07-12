@@ -53,7 +53,7 @@ describe('Convert', function () {
         var fn = function () {
 
             var convert = new Converter({
-                input: Path.resolve(__dirname, '../test/excel/relationship.xls')
+                input: 'invalid'
             });
         };
 
@@ -98,14 +98,28 @@ describe('Convert', function () {
 
     });
 
-    it('should have expose a cursor stream', function (done) {
+    it('should throw if sheet does not exist', function (done) {
+
+        var parser = new Converter(options);
+        var fn = function () {
+
+            parser.streamSheet('example').pipe(process.stdout);
+        };
+        expect(fn).throws(Error);
+        done();
+
+    });
+
+    it('should stream a sheet and a workbook', function (done) {
 
         var parser = new Converter(options);
         StdMocks.use();
-        parser.cursor('organisation').pipe(process.stdout);
+        parser.streamSheet('organisation').pipe(process.stdout);
+        parser.streamBook().pipe(process.stdout);
         StdMocks.restore();
         var test = StdMocks.flush();
         expect(test.stdout[0]).to.equal(test.stdout[1]);
+        expect(test.stdout[2]).to.equal(test.stdout[3]);
         done();
 
     });

@@ -37,9 +37,10 @@ var results = new Converter(options);
 
 results.writeFile();
 
-results.cursor('customer').pipe(process.stdout);
-
 // Also exposes a stream which can be written or piped somewhere
+
+results.streamSheet('customer').pipe(process.stdout);
+results.streamBook().pipe(process.stdout);
 
 ```
 

@@ -1,5 +1,7 @@
 ## Changelog
 
++ 1.1.0 - changed cursor method to streamSheet and added streamBook method to fix issue #2, added .estlinrc and improved type checking of streamSheet function
+
 + 1.0.1 - removed line form README
 
 + 1.0.0 - fixed broken, dev dependencies badge, improved tests and removed unused test excel files
