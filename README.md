@@ -5,6 +5,7 @@ Converts a complete excel spreadsheet to json and writes file out, optionally it
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
 ![devDependencies](http://img.shields.io/david/dev/circabs/xl-json.svg)
+[![Coverage Status](https://coveralls.io/repos/circabs/xl-json/badge.svg?branch=master&service=github)](https://coveralls.io/github/circabs/xl-json?branch=master)
 
 
 ### Install
