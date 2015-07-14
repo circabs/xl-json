@@ -5,7 +5,6 @@ Converts a complete excel spreadsheet to json and writes file out, optionally it
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
 ![devDependencies](http://img.shields.io/david/dev/circabs/xl-json.svg)
-[![Coverage Status](https://coveralls.io/repos/circabs/xl-json/badge.svg?branch=master&service=github)](https://coveralls.io/github/circabs/xl-json?branch=master)
 
 
 ### Install
@@ -28,15 +27,17 @@ var options = {
     output: '../output/relationship',
     spacer: 2, // optional for JSON.stringify
     replacer: ['key'] // optional array or function to be passed to JSON.stringify
-    formatter: formatter // optional to replace standard formatter
+    formatter: {
+        organisation: formatter
+    } // optional object with keys representing the name of sheet within workbook you would like to format and the value is a function that takes one parameter which is an array of objects.  Defaults to standard format which doesn't affect parsing done by j module
 
 };
 
 var results = new Converter(options);
 
-// call writeFile to write out objects as json file for each worksheet in excel file
+// call writeFiles to write out objects as json file for each worksheet in excel file
 
-results.writeFile();
+results.writeFiles();
 
 // Also exposes a stream which can be written or piped somewhere
 
@@ -47,6 +48,4 @@ results.streamBook().pipe(process.stdout);
 
 ###Todo
 
-+ Separate file writing into own routine, plus option to write one sheet and multiple spreadsheets
-+ Add travis for testing and improve testing of streams
-+ Stream not just per sheet but per file or directory of files
++ Add ability to parse, write and stream multiple spreadsheets

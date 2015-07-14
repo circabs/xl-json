@@ -1,6 +1,8 @@
 ## Changelog
 
-+ 1.1.3 - fixed broken test due to missing outout directory
++ 1.2.0 - changed writeFile to writeFiles to be more descriptive, amended readme to explain usage better, enable plugin of formatter functions (defaults to no formatting if not specified)
+
++ 1.1.3 - fixed broken test due to missing output directory
 
 + 1.1.2 - modified .gitignore and added code coverage badge
 

@@ -6,6 +6,7 @@ var Path = require('path');
 var Readable = require('stream').Readable;
 var Converter = require('../lib/index.js');
 var StdMocks = require('std-mocks');
+var Reformat = require('./reformat.js');
 
 // Set-up lab
 var lab = exports.lab = Lab.script();
@@ -77,11 +78,13 @@ describe('Convert', function () {
 
     });
 
-    it('should have settings defined', function (done) {
+    it('should write all sheets from workbook into files', function (done) {
 
+        options.formatter = {
+            organisation: Reformat
+        };
         var parser = new Converter(options);
-        parser.writeFile();
-        expect(parser.settings).to.be.an.object();
+        parser.writeFiles();
         done();
 
     });

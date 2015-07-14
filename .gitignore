@@ -2,6 +2,7 @@
 node_modules
 test.*
 tree.js
-output/*
+test/output/*
+output
 data
 npm-debug.log
