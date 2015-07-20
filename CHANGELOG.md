@@ -1,5 +1,7 @@
 ## Changelog
 
++ 1.3.0 - added toJsonObj method for converting excel into json stringified object which can be used by higher level apis
+
 + 1.2.0 - changed writeFile to writeFiles to be more descriptive, amended readme to explain usage better, enable plugin of formatter functions (defaults to no formatting if not specified)
 
 + 1.1.3 - fixed broken test due to missing output directory

@@ -78,6 +78,17 @@ describe('Convert', function () {
 
     });
 
+    it('should convert excel file into a json object', function (done) {
+
+        options.formatter = {
+            organisation: Reformat
+        };
+        var parser = new Converter(options);
+        var results = parser.toJsonObj();
+        done();
+
+    });
+
     it('should write all sheets from workbook into files', function (done) {
 
         options.formatter = {

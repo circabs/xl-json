@@ -1,6 +1,6 @@
 #xl-json
 
-Converts a complete excel spreadsheet to json and writes file out, optionally it can pipe one worksheet json stream to a pipeline  
+Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline  
 
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
@@ -34,6 +34,10 @@ var options = {
 };
 
 var results = new Converter(options);
+
+// return json stringified object with keys of object being the worksheet name
+
+var jsonObj = results.toJsonObj();
 
 // call writeFiles to write out objects as json file for each worksheet in excel file
 
