@@ -37,11 +37,9 @@ var results = new Converter(options);
 
 // return json stringified object with keys of object being the worksheet name
 
-var jsonObj = results.toJsonObj();
+var jsonObj = results.toJson();
 
-// call writeFiles to write out objects as json file for each worksheet in excel file
 
-results.writeFiles();
 
 // Also exposes a stream which can be written or piped somewhere
 

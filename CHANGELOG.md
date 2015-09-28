@@ -1,5 +1,7 @@
 ## Changelog
 
++ 2.0.0 - merge toJsonObj and writeFiles methods into toJson which will accept one parameter of toWrite which will be true by default which will write file as configured in options passed to constructor. Updated deps, extended travis config and improved tests plus removed std-mocks as not required.
+
 + 1.3.0 - added toJsonObj method for converting excel into json stringified object which can be used by higher level apis
 
 + 1.2.0 - changed writeFile to writeFiles to be more descriptive, amended readme to explain usage better, enable plugin of formatter functions (defaults to no formatting if not specified)
