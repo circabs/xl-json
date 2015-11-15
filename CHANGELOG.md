@@ -1,5 +1,7 @@
 ## Changelog
 
++ 3.0.0 - major bump for node 4+ support only, updated dependencies and moved to ES6 syntax
+
 + 2.0.0 - merge toJsonObj and writeFiles methods into toJson which will accept one parameter of toWrite which will be true by default which will write file as configured in options passed to constructor. Updated deps, extended travis config and improved tests plus removed std-mocks as not required.
 
 + 1.3.0 - added toJsonObj method for converting excel into json stringified object which can be used by higher level apis

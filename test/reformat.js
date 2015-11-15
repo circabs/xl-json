@@ -1,19 +1,19 @@
-
+'use strict';
 
 module.exports = function (data) {
 
-    var results = [];
-    for (var a = 0; a < data.length; ++a) {
-        var obj = {};
-        var oldObj = data[a];
-        var keys = Object.keys(data[a]);
-        for (var i = 0; i < keys.length; ++i) {
-            var key = keys[i];
-            var value = oldObj[key];
+    const results = [];
+    for (let i = 0; i < data.length; ++i) {
+        const obj = {};
+        const oldObj = data[i];
+        const keys = Object.keys(data[i]);
+        for (let j = 0; j < keys.length; ++j) {
+            const key = keys[j];
+            const value = oldObj[key];
             if (key.indexOf(':') !== -1) {
-                var newKeys = key.split(':');
-                var newKey = newKeys[0];
-                var collection = newKeys[1];
+                const newKeys = key.split(':');
+                const newKey = newKeys[0];
+                const collection = newKeys[1];
                 if (newKey === 'roleA' || newKey === 'roleB') {
                     obj[newKey] = {
                         cn: collection,
@@ -21,10 +21,12 @@ module.exports = function (data) {
                             sid: value
                         }
                     };
-                } else {
+                }
+                else {
                     obj[newKeys[1]] = value;
                 }
-            } else {
+            }
+            else {
                 obj[key] = value;
             }
         }

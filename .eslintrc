@@ -1,7 +1,0 @@
-{
-    "extends": "hapi",
-    "rules": {
-        "no-new": 0,
-        "no-unused-vars": 0
-    }
-}

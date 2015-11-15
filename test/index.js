@@ -1,56 +1,43 @@
-// Load modules
+'use strict';
 
-var Code = require('code');
-var Lab = require('lab');
-var Path = require('path');
-var Fs = require('fs');
-var Os = require('os');
-var Converter = require('../lib/index.js');
-var Reformat = require('./reformat.js');
+const Code = require('code');
+const Lab = require('lab');
+const Path = require('path');
+const Fs = require('fs');
+const Os = require('os');
+const Converter = require('../lib/index.js');
+const Reformat = require('./reformat.js');
 
 // Set-up lab
-var lab = exports.lab = Lab.script();
-var describe = lab.describe;
-var it = lab.it;
-var expect = Code.expect;
+const lab = exports.lab = Lab.script();
+const describe = lab.describe;
+const it = lab.it;
+const expect = Code.expect;
 
-var options = {
+const options = {
     input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
     output: Path.resolve(__dirname, '../test/output/relationship'),
     spacer: 4
 };
 
-describe('Convert', function () {
+describe('Convert', () => {
 
 
-    it('should throw if not constructed with new', function (done) {
+    it('should throw if options is not an object', (done) => {
 
+        expect(() => {
 
-        var fn = function () {
-
-            var convert = Converter();
-        };
-
-        expect(fn).throws(Error, 'XlJson must be constructed using new');
-        done();
-
-    });
-
-    it('should throw if options is not an object', function (done) {
-
-        expect(function () {
-
-            var convert = new Converter();
+            new Converter();
         }).throws(Error, 'XlJson must be constructed with an options object');
         done();
 
     });
 
-    it('should throw if input file doesn\t exist', function (done) {
+    it('should throw if input file doesn\t exist', (done) => {
 
-        var fn = function () {
+        const fn = () => {
 
-            var convert = new Converter({
+            new Converter({
                 input: 'invalid'
             });
         };
@@ -60,11 +47,11 @@ describe('Convert', function () {
 
     });
 
-    it('should throw if output directory doesn\t exist', function (done) {
+    it('should throw if output directory doesn\t exist', (done) => {
 
-        var fn = function () {
+        const fn = () => {
 
-            var convert = new Converter({
+            new Converter({
                 input: Path.resolve(__dirname, '../test/excel/relationship.xls'),
                 output: 'invalid'
             });
@@ -74,41 +61,41 @@ describe('Convert', function () {
 
     });
 
-    it('should convert excel file into a json object with write file disabled', function (done) {
+    it('should convert excel file into a json object with write file disabled', (done) => {
 
         options.formatter = {
             organisation: Reformat
         };
-        var parser = new Converter(options);
-        var results = parser.toJson({ write: false });
+        const parser = new Converter(options);
+        parser.toJson({ write: false });
         expect(parser).to.be.an.object();
         done();
 
     });
 
-    it('should write all sheets from workbook into files', function (done) {
+    it('should write all sheets from workbook into files', (done) => {
 
         options.formatter = {
             organisation: Reformat
         };
-        var parser = new Converter(options);
+        const parser = new Converter(options);
         parser.toJson({ write: true });
         done();
 
     });
 
-    it('should have data object defined', function (done) {
+    it('should have data object defined', (done) => {
 
-        var parser = new Converter(options);
+        const parser = new Converter(options);
         expect(parser.data).to.be.an.object();
         done();
 
     });
 
-    it('should throw if sheet does not exist', function (done) {
+    it('should throw if sheet does not exist', (done) => {
 
-        var parser = new Converter(options);
-        var fn = function () {
+        const parser = new Converter(options);
+        const fn = () => {
 
             parser.streamSheet('example').pipe(process.stdout);
         };
@@ -117,12 +104,12 @@ describe('Convert', function () {
 
     });
 
-    it('should stream a sheet and a workbook', function (done) {
+    it('should stream a sheet and a workbook', (done) => {
 
-        var parser = new Converter(options);
-        var tmp = Os.tmpDir();
-        var writeSheet = Fs.createWriteStream(Path.join(tmp, 'sheet.json'));
-        var writeBook = Fs.createWriteStream(Path.join(tmp, 'book.json'));
+        const parser = new Converter(options);
+        const tmp = Os.tmpDir();
+        const writeSheet = Fs.createWriteStream(Path.join(tmp, 'sheet.json'));
+        const writeBook = Fs.createWriteStream(Path.join(tmp, 'book.json'));
         parser.streamSheet('organisation').pipe(writeSheet);
         parser.streamBook().pipe(writeBook);
         done();
