@@ -1,0 +1,59 @@
+[
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "incomplete",
+            "description": "system set - used during client registration process"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "imported",
+            "description": "system set - indicates client was imported from other system"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "pending",
+            "valueText": "Pending Approval",
+            "description": "system set - risk information has been completed"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "active",
+            "description": "user set - ready to trade"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "locked",
+            "description": "system set - document has expired"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "suspended",
+            "description": "user set - for serious situations, e.g. client featured in news - no trades can be accepted without a management over-ride and a reason/explanation must be given"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "rejected",
+            "description": "user set - client has undertaken registration but been rejected"
+        }
+    },
+    {
+        "recType": "partyStatus",
+        "lookup": {
+            "value": "closed",
+            "description": "user set - client account is permanently closed – no transactions, no user over-ride"
+        }
+    }
+]

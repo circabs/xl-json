@@ -15,8 +15,8 @@ const it = lab.it;
 const expect = Code.expect;
 
 const options = {
-    input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
-    output: Path.resolve(__dirname, '../test/output/relationship'),
+    input: Path.resolve(__dirname, '../test/excel/lookup.xlsx'),
+    output: Path.resolve(__dirname, '../test/output/lookup'),
     spacer: 4
 };
 
@@ -33,7 +33,7 @@ describe('Convert', () => {
 
     });
 
-    it('should throw if input file doesn\t exist', (done) => {
+    it('should throw if input file does not exist', (done) => {
 
         const fn = () => {
 
@@ -47,7 +47,7 @@ describe('Convert', () => {
 
     });
 
-    it('should throw if output directory doesn\t exist', (done) => {
+    it('should throw if output directory does not exist', (done) => {
 
         const fn = () => {
 
@@ -64,7 +64,7 @@ describe('Convert', () => {
     it('should convert excel file into a json object with write file disabled', (done) => {
 
         options.formatter = {
-            organisation: Reformat
+            salutation: Reformat
         };
         const parser = new Converter(options);
         parser.toJson({ write: false });
@@ -75,9 +75,6 @@ describe('Convert', () => {
 
     it('should write all sheets from workbook into files', (done) => {
 
-        options.formatter = {
-            organisation: Reformat
-        };
         const parser = new Converter(options);
         parser.toJson({ write: true });
         done();
@@ -110,7 +107,7 @@ describe('Convert', () => {
         const tmp = Os.tmpDir();
         const writeSheet = Fs.createWriteStream(Path.join(tmp, 'sheet.json'));
         const writeBook = Fs.createWriteStream(Path.join(tmp, 'book.json'));
-        parser.streamSheet('organisation').pipe(writeSheet);
+        parser.streamSheet('salutation').pipe(writeSheet);
         parser.streamBook().pipe(writeBook);
         done();
 

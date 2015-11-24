@@ -1,0 +1,80 @@
+[
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Bishop"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Dr."
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Father"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Lady"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Miss"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Mr."
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Mrs."
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Ms."
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Prof."
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Rabbi"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Sir"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "Sister"
+        }
+    },
+    {
+        "recType": "salutation",
+        "lookup": {
+            "value": "The Rt Hon."
+        }
+    }
+]

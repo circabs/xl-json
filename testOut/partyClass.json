@@ -1,0 +1,79 @@
+[
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "owner",
+            "valueText": "System Owner"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "fca",
+            "valueText": "FCA Authorised/Registered"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "bank",
+            "valueText": "UK Bank"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "int:bank",
+            "valueText": "International Bank"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "usd:bank",
+            "valueText": "US Bank"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "academy"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "school"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "higherEducation"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "socialEnterprise"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "foundation"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "trust"
+        }
+    },
+    {
+        "recType": "partyClass",
+        "lookup": {
+            "value": "club"
+        }
+    }
+]

@@ -1,10 +1,13 @@
 {
   "name": "xl-json",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "excel-to-json converter",
   "main": "lib/index.js",
   "scripts": {
     "test": "lab -a code -v -L -t 100 -l"
+  },
+  "bin": {
+    "xl-json": "./bin/xl-json"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -28,6 +31,7 @@
   "devDependencies": {
     "code": "^2.0.1",
     "lab": "^7.3.0",
+    "rmdir": "^1.1.0",
     "std-mocks": "^1.0.0"
   }
 }

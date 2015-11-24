@@ -1,0 +1,20 @@
+[
+    {
+        "recType": "docDateType",
+        "lookup": {
+            "value": "document"
+        }
+    },
+    {
+        "recType": "docDateType",
+        "lookup": {
+            "value": "either"
+        }
+    },
+    {
+        "recType": "docDateType",
+        "lookup": {
+            "value": "expiry"
+        }
+    }
+]

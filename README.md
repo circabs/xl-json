@@ -1,6 +1,6 @@
 #xl-json
 
-Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline.  Module only works for nodejs version 4 or higher 
+Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline.  Module only works for nodejs version 4 or higher
 
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
@@ -47,6 +47,16 @@ results.streamSheet('customer').pipe(process.stdout);
 results.streamBook().pipe(process.stdout);
 
 ```
+
+### Cli usage
+##### xl-json <options>
+
+- `-i`, `--i` or `--input` to set the input path of excel file to be converted
+- `-o`, `--o` or `--ouput` to select the destination for converted json to be written to
+- `-f`, `--f` or `--formatters` location of formatters object to be used to parse excel
+- `-V`, `--V` or `--version` will display the current version of package
+- `-h` - will show usage of cli
+
 
 ###Todo
 

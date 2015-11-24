@@ -1,0 +1,20 @@
+[
+    {
+        "recType": "docStatus",
+        "lookup": {
+            "value": "present"
+        }
+    },
+    {
+        "recType": "docStatus",
+        "lookup": {
+            "value": "valid"
+        }
+    },
+    {
+        "recType": "docStatus",
+        "lookup": {
+            "value": "invalid"
+        }
+    }
+]

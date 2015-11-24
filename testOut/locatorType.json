@@ -1,0 +1,32 @@
+[
+    {
+        "recType": "locatorType",
+        "lookup": {
+            "value": "address"
+        }
+    },
+    {
+        "recType": "locatorType",
+        "lookup": {
+            "value": "contact"
+        }
+    },
+    {
+        "recType": "locatorType",
+        "lookup": {
+            "value": "email"
+        }
+    },
+    {
+        "recType": "locatorType",
+        "lookup": {
+            "value": "billing"
+        }
+    },
+    {
+        "recType": "locatorType",
+        "lookup": {
+            "value": "phone"
+        }
+    }
+]

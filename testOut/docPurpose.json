@@ -1,0 +1,119 @@
+[
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "clientRegistration",
+            "valueText": "Client Registration",
+            "sequence": "1",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "proofOfIdentity",
+            "valueText": "Proof of Identity",
+            "sequence": "2",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "proofOfOrganisation",
+            "valueText": "Proof of Organisation",
+            "sequence": "3",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "proofOfAddress",
+            "valueText": "Proof of Address",
+            "sequence": "4",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "financialAccounts",
+            "valueText": "Financial Accounts",
+            "sequence": "5",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "regulatorCertificate",
+            "valueText": "Regulatory Certificate",
+            "sequence": "6",
+            "automaticChecklist": "3"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "transactionReason",
+            "valueText": "Evidence of Reason For Transaction",
+            "sequence": "7",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "sourceOfFunds",
+            "valueText": "Evidence of Source Of Funds",
+            "sequence": "8",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "furtherInvestigation",
+            "valueText": "Further Investigation",
+            "sequence": "9",
+            "automaticChecklist": "0"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "identityVerification",
+            "valueText": "Identity Verification (AML/Sanctions/PEP)",
+            "sequence": "10",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "creditCheck",
+            "valueText": "Credit Check",
+            "sequence": "11",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "authorisedPerson",
+            "valueText": "Authorised Person",
+            "sequence": "12",
+            "automaticChecklist": "1"
+        }
+    },
+    {
+        "recType": "docPurpose",
+        "lookup": {
+            "value": "other",
+            "valueText": "Other ",
+            "sequence": "99",
+            "automaticChecklist": "0"
+        }
+    }
+]

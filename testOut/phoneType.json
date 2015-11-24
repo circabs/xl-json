@@ -1,0 +1,20 @@
+[
+    {
+        "recType": "phoneType",
+        "lookup": {
+            "value": "landline"
+        }
+    },
+    {
+        "recType": "phoneType",
+        "lookup": {
+            "value": "mobile"
+        }
+    },
+    {
+        "recType": "phoneType",
+        "lookup": {
+            "value": "fax"
+        }
+    }
+]

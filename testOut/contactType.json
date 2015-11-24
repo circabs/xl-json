@@ -1,0 +1,44 @@
+[
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "home"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "business"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "billing"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "registered"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "delivery"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "other"
+        }
+    },
+    {
+        "recType": "contactType",
+        "lookup": {
+            "value": "link"
+        }
+    }
+]

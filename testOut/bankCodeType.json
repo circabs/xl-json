@@ -1,0 +1,27 @@
+[
+    {
+        "recType": "bankCodeType",
+        "luValue": "sortcode",
+        "valueText": "Sort Code"
+    },
+    {
+        "recType": "bankCodeType",
+        "luValue": "bsb",
+        "valueText": "BSB Number"
+    },
+    {
+        "recType": "bankCodeType",
+        "luValue": "aba",
+        "valueText": "ABA Routing Number"
+    },
+    {
+        "recType": "bankCodeType",
+        "luValue": "swiftbic",
+        "valueText": "SWIFT BIC Code"
+    },
+    {
+        "recType": "bankCodeType",
+        "luValue": "iban",
+        "valueText": "IBAN"
+    }
+]

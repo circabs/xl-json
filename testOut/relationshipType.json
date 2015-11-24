@@ -1,0 +1,124 @@
+[
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "employment",
+            "valueText": " ",
+            "roleA": "employee",
+            "roleB": "employer"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "organisation",
+            "roleA": "unit",
+            "roleB": "group"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "ubo",
+            "valueText": "UBO",
+            "roleA": "asset",
+            "roleB": "shareholder"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "customer",
+            "roleA": "buyer",
+            "roleB": "seller"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "supplier",
+            "roleA": "seller",
+            "roleB": "buyer"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "compliance",
+            "roleA": "regulatoree",
+            "roleB": "regulator"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "marriage",
+            "roleA": "wife",
+            "roleB": "husband"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "civilPartnership",
+            "roleA": "partner",
+            "roleB": "partner"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "cohabitation",
+            "roleA": "partner",
+            "roleB": "partner"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "parent",
+            "roleA": "child",
+            "roleB": "parent"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "guardian",
+            "roleA": "child",
+            "roleB": "guardian"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "sibling",
+            "roleA": "sibling",
+            "roleB": "sibling"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "family",
+            "roleA": "member",
+            "roleB": "family"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "household",
+            "roleA": "member",
+            "roleB": "house"
+        }
+    },
+    {
+        "recType": "relationshipType",
+        "lookup": {
+            "alue": "franchise",
+            "roleA": "franchisee",
+            "roleB": "franchiser"
+        }
+    }
+]
