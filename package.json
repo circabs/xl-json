@@ -23,6 +23,7 @@
   "author": "simon-p-r",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "bossy": "^2.0.0",
     "flat": "^1.6.0",
     "hoek": "^3.0.4",
     "j": "^0.4.3",
