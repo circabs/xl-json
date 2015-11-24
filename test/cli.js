@@ -9,13 +9,12 @@ const Rmdir = require('rimraf');
 // Declare internals
 const internals = {};
 
-
 // Test shortcuts
 const lab = exports.lab = Lab.script();
 const describe = lab.describe;
 const it = lab.it;
 const expect = Code.expect;
-
+const before = lab.before;
 
 describe('Cli', () => {
 
@@ -23,7 +22,7 @@ describe('Cli', () => {
     const outDir = Path.join(__dirname, 'tmpOutput');
     const inputDir = './test/excel/lookup.xlsx';
 
-    lab.before((done) => {
+    before((done) => {
 
         Rmdir.sync(outDir);
         done();

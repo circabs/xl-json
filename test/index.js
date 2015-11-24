@@ -1,18 +1,22 @@
 'use strict';
 
 const Code = require('code');
-const Lab = require('lab');
-const Path = require('path');
-const Fs = require('fs');
-const Os = require('os');
 const Converter = require('../lib/index.js');
+const Fs = require('fs');
+const Lab = require('lab');
+const Os = require('os');
+const Mkdirp = require('mkdirp');
+const Path = require('path');
 const Reformat = require('./reformat.js');
+const Rmdir = require('rimraf');
 
 // Set-up lab
 const lab = exports.lab = Lab.script();
 const describe = lab.describe;
 const it = lab.it;
 const expect = Code.expect;
+const before = lab.before;
+const after = lab.after;
 
 const options = {
     input: Path.resolve(__dirname, '../test/excel/lookup.xlsx'),
@@ -21,6 +25,18 @@ const options = {
 };
 
 describe('Convert', () => {
+
+    before((done) => {
+
+        Mkdirp.sync(Path.resolve(__dirname, 'output/lookup'));
+        done();
+    });
+
+    after((done) => {
+
+        Rmdir.sync(Path.resolve(__dirname, 'output'));
+        done();
+    });
 
 
     it('should throw if options is not an object', (done) => {
