@@ -1,6 +1,6 @@
 {
   "name": "xl-json",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "excel-to-json converter",
   "main": "lib/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "author": "simon-p-r",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "flat": "^1.6.0",
     "hoek": "^3.0.4",
     "j": "^0.4.3",
     "joi": "^7.0.0"

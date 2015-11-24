@@ -1,6 +1,6 @@
 #xl-json
 
-Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline  
+Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline.  Module only works for nodejs version 4 or higher 
 
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
 [![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)

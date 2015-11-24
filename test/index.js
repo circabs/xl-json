@@ -52,7 +52,7 @@ describe('Convert', () => {
         const fn = () => {
 
             new Converter({
-                input: Path.resolve(__dirname, '../test/excel/relationship.xls'),
+                input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
                 output: 'invalid'
             });
         };
