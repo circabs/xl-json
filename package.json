@@ -1,8 +1,9 @@
 {
   "name": "xl-json",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "excel-to-json converter",
   "main": "lib/index.js",
+  "preferGlobal": true,
   "scripts": {
     "test": "lab -a code -v -L -t 100 -l"
   },
@@ -27,7 +28,7 @@
     "flat": "^1.6.0",
     "hoek": "^3.0.4",
     "j": "^0.4.3",
-    "joi": "^7.0.0"
+    "joi": "^7.0.1"
   },
   "devDependencies": {
     "code": "^2.0.1",

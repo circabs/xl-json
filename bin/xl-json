@@ -1,4 +1,4 @@
-#!/usr/bin/env node --use_strict
+#!/usr/bin/env node
 
 const Cli = require('../lib/cli.js');
 
