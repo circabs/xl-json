@@ -1,5 +1,7 @@
 ## Changelog
 
++ 3.2.2 - fixed bug with escaping apostrophe and removed testOut folder
+
 + 3.2.0 - added basic cli interface, test and instructions on use
 
 + 3.1.0 - improved checking of input and output options, default parser of rows improved by using flat module
