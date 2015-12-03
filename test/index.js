@@ -51,28 +51,42 @@ describe('Convert', () => {
 
     it('should throw if input file does not exist', (done) => {
 
-        const fn = () => {
+        const invalid = () => {
 
             new Converter({
                 input: 'invalid'
             });
         };
+        expect(invalid).throws(Error);
+        const isDir = () => {
 
-        expect(fn).throws(Error);
+            new Converter({
+                input: Path.resolve(__dirname, '../test/excel')
+            });
+        };
+        expect(isDir).throws(Error);
         done();
 
     });
 
     it('should throw if output directory does not exist', (done) => {
 
-        const fn = () => {
+        const invalid = () => {
 
             new Converter({
                 input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
                 output: 'invalid'
             });
         };
-        expect(fn).throws(Error);
+        expect(invalid).throws(Error);
+        const isFile = () => {
+
+            new Converter({
+                input: Path.resolve(__dirname, '../test/excel/relationship.xlsx'),
+                output: Path.resolve(__dirname, '../test/reformat.js')
+            });
+        };
+        expect(isFile).throws(Error);
         done();
 
     });
