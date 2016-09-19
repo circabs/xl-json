@@ -2,9 +2,14 @@
 
 Converts a complete excel spreadsheet to json in either object, as file or stream to a pipeline.  Module only works for nodejs version 4 or higher
 
+[![Current Version](https://img.shields.io/npm/v/xl-json.svg?maxAgge=1000)](https://www.npmjs.org/package/xl-json)
+[![dependency Status](https://img.shields.io/david/circabs/xl-json.svg?maxAge=1000)](https://david-dm.org/circabs/xl-json)
+[![devDependency Status](https://img.shields.io/david/dev/circabs/xl-json.svg?maxAge=1000)](https://david-dm.org/circabs/xl-json)
 [![Build Status](https://travis-ci.org/circabs/xl-json.svg?branch=master)](https://travis-ci.org/circabs/xl-json)
-[![Current Version](https://img.shields.io/npm/v/xl-json.svg)](https://www.npmjs.org/package/xl-json)
-![devDependencies](http://img.shields.io/david/dev/circabs/xl-json.svg)
+[![Coveralls](https://img.shields.io/coveralls/circabs/xl-json.svg?maxAge=1000)](https://coveralls.io/github/circabs/xl-json)
+
+
+
 
 
 ### Install
@@ -19,10 +24,10 @@ npm install xl-json
 
 ```js
 
-var Converter = require('xl-json');
+const Converter = require('xl-json');
 
 
-var options = {
+const options = {
     input: Path.resolve(__dirname, './test/excel/relationship.xlsx'),
     output: '../output/relationship',
     spacer: 2, // optional for JSON.stringify
@@ -33,11 +38,11 @@ var options = {
 
 };
 
-var results = new Converter(options);
+const results = new Converter(options);
 
 // return json stringified object with keys of object being the worksheet name
 
-var jsonObj = results.toJson();
+const jsonObj = results.toJson();
 
 
 

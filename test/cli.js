@@ -3,6 +3,7 @@
 const Code = require('code');
 const Cli = require('../lib/cli');
 const Lab = require('lab');
+const Path = require('path');
 const Utils = require('basic-utils');
 
 // Declare internals
@@ -30,7 +31,12 @@ describe('Cli', () => {
             Utils.rmDir('./test/invalid', (err) => {
 
                 expect(err).to.not.exist();
-                done();
+
+                Utils.rmDir(Path.resolve(process.env.HOME, '.xl-json/output'), (err) => {
+
+                    expect(err).to.not.exist();
+                    done();
+                });
             });
         });
     });
