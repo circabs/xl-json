@@ -1,11 +1,12 @@
 {
   "name": "xl-json",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "excel-to-json converter",
   "main": "lib/index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "lab -a code -v -L -t 100 -l"
+    "test": "lab -a code -v -L -t 100 -l",
+    "coveralls": "lab -r lcov | coveralls"
   },
   "bin": {
     "xl-json": "./bin/xl-json"
@@ -34,6 +35,7 @@
   "devDependencies": {
     "basic-utils": "^1.5.2",
     "code": "^3.0.2",
+    "coveralls": "^2.11.13",
     "lab": "^11.0.1",
     "std-mocks": "^1.0.1"
   }
