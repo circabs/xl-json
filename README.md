@@ -54,7 +54,7 @@ results.streamBook().pipe(process.stdout);
 - `-i`, `--i` or `--input` to set the input path of excel file to be converted
 - `-o`, `--o` or `--ouput` to select the destination for converted json to be written to
 - `-f`, `--f` or `--formatters` location of formatters object to be used to parse excel
-- `-V`, `--V` or `--version` will display the current version of package
+- `-v`, `--v` or `--version` will display the current version of package
 - `-h` - will show usage of cli
 
 

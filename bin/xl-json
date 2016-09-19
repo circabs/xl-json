@@ -1,5 +1,14 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --use_strict
 
 const Cli = require('../lib/cli.js');
 
-Cli.run();
+Cli.run(process.argv, (err, result) => {
+
+    if (err) {
+        console.error(err.message);
+        process.exit(1);
+    }
+    console.log(result);
+    process.exit(0);
+
+});

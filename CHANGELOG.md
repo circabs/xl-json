@@ -1,5 +1,7 @@
 ## Changelog
 
++ 3.3.0 - updated deps, cleaned up cli interface and added tests
+
 + 3.2.3 - fixed bug with checking if input isFile and output isDirectory and added tests to cover this
 
 + 3.2.2 - fixed bug with escaping apostrophe and removed testOut folder

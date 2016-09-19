@@ -5,10 +5,9 @@ const Converter = require('../lib/index.js');
 const Fs = require('fs');
 const Lab = require('lab');
 const Os = require('os');
-const Mkdirp = require('mkdirp');
 const Path = require('path');
 const Reformat = require('./reformat.js');
-const Rmdir = require('rimraf');
+const Utils = require('basic-utils');
 
 // Set-up lab
 const lab = exports.lab = Lab.script();
@@ -28,13 +27,13 @@ describe('Convert', () => {
 
     before((done) => {
 
-        Mkdirp.sync(Path.resolve(__dirname, 'output/lookup'));
+        Utils.mkDirSync(Path.resolve(__dirname, 'output/lookup'));
         done();
     });
 
     after((done) => {
 
-        Rmdir.sync(Path.resolve(__dirname, 'output'));
+        Utils.rmDirSync(Path.resolve(__dirname, 'output'));
         done();
     });
 
