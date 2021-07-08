@@ -1,10 +1,11 @@
 'use strict';
 
-const Code = require('code');
+const Code = require('@hapi/code');
 const Cli = require('../lib/cli');
-const Lab = require('lab');
+const Lab = require('@hapi/lab');
 const Path = require('path');
 const Utils = require('basic-utils');
+const Pkg = require('../package.json');
 
 // Declare internals
 const internals = {};
@@ -22,7 +23,7 @@ describe('Cli', () => {
     const inputDir = './test/excel/lookup.xlsx';
     const formatters = './test/reformat.js';
 
-    after((done) => {
+    after(() => {
 
         Utils.rmDir('./test/tmp', (err) => {
 
@@ -35,98 +36,99 @@ describe('Cli', () => {
                 Utils.rmDir(Path.resolve(process.env.HOME, '.xl-json/output'), (err) => {
 
                     expect(err).to.not.exist();
-                    done();
                 });
             });
         });
     });
 
 
-    it('returns error when invalid args are used', (done) => {
+    it('returns error when invalid args are used', () => {
 
         const errArgs = ['-invalid', 'args'];
         Cli.run(errArgs, (err, output) => {
 
             expect(err).to.exist();
             expect(output).to.not.exist();
-            done();
         });
     });
 
-    it('returns error when no input is used', (done) => {
+    it('returns error when no input is used', () => {
 
         Cli.run([], (err, output) => {
 
             expect(err).to.exist();
             expect(output).to.not.exist();
-            done();
         });
     });
 
-    it('returns error when invalid formatter is used', (done) => {
-
+    it('returns error when invalid formatter is used', () => {
 
         const args = ['-i', inputDir, '-f', './test/invalid.js'];
         Cli.run(args, (err, output) => {
 
             expect(err).to.exist();
             expect(output).to.not.exist();
-            done();
         });
     });
 
-    it('should show help when -h flag is called', (done) => {
+    it('should show help when -h or --help flag is called', () => {
 
-        const helpArgs = ['-h'];
-        Cli.run(helpArgs, (err, output) => {
+        Cli.run(['-h'], (err, output) => {
 
             expect(err).to.not.exist();
             expect(output).to.exist();
-            done();
+            // Cli.run(['--help'], (err, output2) => {
+
+            //     expect(err).to.not.exist();
+            //     expect(output2).to.exist();
+            // });
         });
     });
 
-    it('should show version of project when -v flag is called', (done) => {
+    it('should show version of project when -v or --version flag is called', () => {
 
-        const versionArgs = ['-v'];
-        Cli.run(versionArgs, (err, output) => {
+        const version = `Package xl-json v${Pkg.version}`;
+        Cli.run(['-v'], (err, output) => {
 
             expect(err).to.not.exist();
-            expect(output).to.contain('v');
-            done();
+            expect(output).to.equal(version);
+            // Cli.run(['--version'], (err, output2) => {
+
+            //     expect(err).to.not.exist();
+            //     expect(output2).to.equal(version);
+            // });
         });
+
+
     });
 
-    it('runs command to validate and persist all schemas to disk using default output path', (done) => {
+    it('runs command to validate and persist all schemas to disk using default output path', () => {
 
         const args = ['-i', inputDir, '-f', formatters];
         Cli.run(args, (err, output) => {
 
             expect(err).to.not.exist();
             expect(output).to.exist();
-            done();
         });
     });
 
-    it('runs command to validate and persist all schemas to disk', (done) => {
+    it('runs command to validate and persist all schemas to disk', () => {
 
-        const args = ['-i', inputDir, '-o', outDir];
+        const args = ['--input', inputDir, '-o', outDir];
         Cli.run(args, (err, output) => {
 
             expect(err).to.not.exist();
             expect(output).to.exist();
-            done();
         });
     });
 
-    it('runs command to validate and persist all schemas to disk', (done) => {
+    it('runs command to validate and persist all schemas to disk', () => {
 
         const args = ['-i', inputDir, '-o', './test/invalid'];
         Cli.run(args, (err, output) => {
 
             expect(err).to.not.exist();
             expect(output).to.exist();
-            done();
         });
     });
 

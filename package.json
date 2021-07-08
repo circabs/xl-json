@@ -1,11 +1,11 @@
 {
   "name": "xl-json",
-  "version": "3.3.2",
+  "version": "4.0.0",
   "description": "excel-to-json converter",
   "main": "lib/index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "lab -a code -v -L -t 100 -l",
+    "test": "lab -a @hapi/code -v -L -I cptable -t 100",
     "coveralls": "lab -r lcov | coveralls"
   },
   "bin": {
@@ -25,18 +25,16 @@
   "author": "simon-p-r",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "basic-utils": "^1.6.0",
-    "bossy": "^3.0.1",
-    "flat": "^2.0.1",
-    "hoek": "^4.0.2",
-    "j": "^0.4.3",
-    "joi": "^9.0.4"
+    "@hapi/bossy": "^5.1.0",
+    "@hapi/joi": "^17.1.1",
+    "basic-utils": "^2.2.1",
+    "flat": "^5.0.2",
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
-    "basic-utils": "^1.5.2",
-    "code": "^3.0.2",
-    "coveralls": "^2.11.13",
-    "lab": "^11.0.1",
+    "@hapi/code": "^8.0.3",
+    "@hapi/lab": "^24.2.1",
+    "coveralls": "^3.1.1",
     "std-mocks": "^1.0.1"
   }
 }
